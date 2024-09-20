@@ -1,0 +1,87 @@
+<script>
+
+    function calc(valor)
+ 
+    {
+ 
+       if(valor=='%') valor = '/100';
+ 
+       if(valor=='=')
+ 
+       {
+ 
+          document.calcula.f.value = eval(document.calcula.f.value);
+ 
+       }
+ 
+       else
+ 
+       {
+ 
+          document.calcula.f.value = document.calcula.f.value + valor;
+ 
+       }
+ 
+    }
+ 
+ </script>
+ 
+  
+ 
+ <center>
+ 
+ <table border=5><tr><td bgcolor=gray><center>
+ 
+    <form name=calcula>
+ 
+       <input name=f size=25 maxlength=25><hr>
+ 
+       <input type=button value='+' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='-' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='*' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='/' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='%' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='=' onClick='javascript:calc(value);'>
+ 
+       <p>
+ 
+       <input type=button value='(' onClick='javascript:calc(value);'>
+ 
+       <input type=button value=')' onClick='javascript:calc(value);'>
+ 
+       <p>
+ 
+       <input type=button value='0' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='1' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='2' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='3' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='4' onClick='javascript:calc(value);'>
+ 
+       <p>
+ 
+       <input type=button value='5' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='6' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='7' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='8' onClick='javascript:calc(value);'>
+ 
+       <input type=button value='9' onClick='javascript:calc(value);'>
+ 
+       <p>
+ 
+       <input type=reset name=resetar value='resetar'>
+ 
+    </form>
+ 
+ </td></tr></table>
