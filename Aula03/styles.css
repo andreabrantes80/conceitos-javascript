@@ -1,0 +1,60 @@
+/* Define o estilo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte */ 
+    background-color: #222121;  /* Cor de fundo */ 
+    margin: 0; /* Margem */
+    padding: 0; /* Espaçamento entre os itens */
+    display: flex; /* Tipo do Display */
+    justify-content: center; /* Modelo do display */
+    align-items: center; /* Alinhamento dos itens */
+    height: 100vh; /* Altura */
+}
+
+/* Estiliza o contêiner central */
+.container {
+    text-align: center; /* Alinhamento do texto */
+    background-color: white; /* Cor de fundo */
+    padding: 20px; /* Espaçamento entre os itens */
+    border-radius: 10px; /* Arredondamento das bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
+/* Estilo dos campos de input e botões */
+input[type="text"], input[type="number"] {
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Margem */
+    width: 200px; /* Largura */
+    border: 1px solid #ccc; /* Cor da borda sólida */ 
+    border-radius: 15px 15px; /* Arrendodamento das bordas */
+}
+/* Estilo do botão */
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 10px; /* Margem */
+    background-color: #28a745; /* Cor do fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 15px 15px; /* Arrendodamento das bordas */
+    cursor: pointer;
+}
+/* Efeito mundança de cor ao passar o mouse */
+button:hover { 
+    background-color: #218838; /* Cor ao passar o mouse */
+}
+/* Estilos da tabela */
+table {
+    width: 100%; /* Largura */
+    margin-top: 20px; /* Alinhamento da margem acima */
+    border-collapse: collapse; /* Borda dispersa */
+    text-align: left; /*  Alinhamento do texto */
+} 
+/*  Estilo das linhas e células da tabela */
+th, td {
+    padding: 10px; /* Espaçamento */
+    border: 1px solid #ccc; /* Cor da borda */
+}
+
+/* Oculta elementos inicialmente */
+.oculto {
+    display: none; /* Retira o elemento do display */
+} 
